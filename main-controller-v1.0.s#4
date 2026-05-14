@@ -5994,14 +5994,17 @@ Type A:
 Type B:
 - T = pin 4
 - R = pin 5</text>
-<text x="-15.24" y="-7.62" size="1.778" layer="91">TODO
+<text x="-10.16" y="-17.78" size="1.778" layer="91">TODO
 - midi out (and perhaps move midi interface to I/o board)
 - USB midi
 - Multiplexer for serial to voices? Or expander.
+  - can use CD4053
 - power ctrl for sequentially powering up all voices
 - Serial for keyboard, button, pots and leds
 - SPI for comms with raspberry etc.
-- Serial for keyboard scanner</text>
+- Serial for keyboard scanner
+- CV control for global FX etc
+- Analog input (CV/audio)</text>
 </plain>
 <instances>
 <instance part="M1" gate="G$1" x="73.66" y="0" smashed="yes">
@@ -6513,6 +6516,27 @@ Type B:
 <wire x1="142.24" y1="71.12" x2="144.78" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="68.58" x2="142.24" y2="71.12" width="0.1524" layer="91"/>
 <junction x="142.24" y="71.12"/>
+</segment>
+</net>
+<net name="MASTER_CLOCK_OUT" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="33"/>
+<wire x1="93.98" y1="-30.48" x2="129.54" y2="-30.48" width="0.1524" layer="91"/>
+<label x="96.52" y="-30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="EXT_CLOCK_IN" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="34"/>
+<wire x1="93.98" y1="-27.94" x2="129.54" y2="-27.94" width="0.1524" layer="91"/>
+<label x="96.52" y="-27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MASTER_SYNC" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="35"/>
+<wire x1="93.98" y1="-25.4" x2="129.54" y2="-25.4" width="0.1524" layer="91"/>
+<label x="96.52" y="-25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

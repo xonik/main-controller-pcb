@@ -13016,7 +13016,8 @@ Type B:
 - R = pin 5</text>
 <text x="-50.8" y="5.08" size="1.778" layer="91">TODO
 - midi out (and perhaps move midi interface to I/o board)
-- USB midi
+- USB midi - will be part of main USB input cable.
+- USB power blocker - the teensies and internal USB hub are powered by the SeventyPWR, so usb power should not come through
 - Multiplexer for serial to voices? Or expander.
   - can use CD4053
 - power ctrl for sequentially powering up all voices
@@ -13025,6 +13026,9 @@ Type B:
 - Serial for keyboard scanner
 - CV control for global FX etc
 - Analog input (CV/audio)</text>
+<text x="35.56" y="106.68" size="3.81" layer="91">Externally: Add USB Power blocking so that
+only the internal power supply supplies the
+USB hub</text>
 </plain>
 <instances>
 <instance part="M1" gate="G$1" x="73.66" y="0" smashed="yes">

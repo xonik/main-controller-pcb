@@ -13581,27 +13581,6 @@ Type B:
 <junction x="142.24" y="71.12"/>
 </segment>
 </net>
-<net name="MASTER_CLOCK_OUT" class="0">
-<segment>
-<pinref part="M1" gate="G$1" pin="33"/>
-<wire x1="93.98" y1="-30.48" x2="129.54" y2="-30.48" width="0.1524" layer="91"/>
-<label x="96.52" y="-30.48" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="EXT_CLOCK_IN" class="0">
-<segment>
-<pinref part="M1" gate="G$1" pin="34"/>
-<wire x1="93.98" y1="-27.94" x2="129.54" y2="-27.94" width="0.1524" layer="91"/>
-<label x="96.52" y="-27.94" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="MASTER_SYNC" class="0">
-<segment>
-<pinref part="M1" gate="G$1" pin="35"/>
-<wire x1="93.98" y1="-25.4" x2="129.54" y2="-25.4" width="0.1524" layer="91"/>
-<label x="96.52" y="-25.4" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="POWER_RAIL_SENSE" class="0">
 <segment>
 <pinref part="M1" gate="G$1" pin="15"/>
@@ -13629,6 +13608,27 @@ Type B:
 <wire x1="165.1" y1="0" x2="187.96" y2="0" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="-7.62" x2="165.1" y2="0" width="0.1524" layer="91"/>
 <junction x="165.1" y="0"/>
+</segment>
+</net>
+<net name="TX_VOICE_1" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="8"/>
+<wire x1="58.42" y1="5.08" x2="35.56" y2="5.08" width="0.1524" layer="91"/>
+<label x="35.56" y="5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TX_VOICE_2" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="14"/>
+<wire x1="93.98" y1="-2.54" x2="119.38" y2="-2.54" width="0.1524" layer="91"/>
+<label x="96.52" y="-2.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TX_VOICE_3" class="0">
+<segment>
+<pinref part="M1" gate="G$1" pin="17"/>
+<wire x1="93.98" y1="5.08" x2="119.38" y2="5.08" width="0.1524" layer="91"/>
+<label x="96.52" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
